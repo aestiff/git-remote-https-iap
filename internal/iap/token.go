@@ -141,7 +141,7 @@ func GetIAPAuthToken(domain, helperID, helperSecret, IAPclientID string, forcebr
 		"client_secret": {helperSecret},
 		"refresh_token": {refreshToken},
 		"grant_type":    {"refresh_token"},
-		"audience":      {IAPclientID},
+		//"audience":      {IAPclientID},
 	})
 
 	if err != nil {
